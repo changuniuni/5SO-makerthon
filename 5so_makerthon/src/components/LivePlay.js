@@ -23,7 +23,6 @@ const Styles = {
 
 function LivePlay() {
     const [playing, setPlaying] = React.useState(undefined);
-  
     const videoRef = React.useRef(null);
   
     React.useEffect(() => {
@@ -50,7 +49,7 @@ function LivePlay() {
   
     return (<>
       <div style={{ width: '100vw', height: '100vh', padding: '0px' }}>
-        <video ref={videoRef} autoPlay style={Styles.Video} />
+        <video id="cappart" ref={videoRef} autoPlay style={Styles.Video} />
         <button  color="warning"  onClick={() => startOrStop()}>{playing ? 'Stop' : 'Start'} </button>
       </div >
     </>);

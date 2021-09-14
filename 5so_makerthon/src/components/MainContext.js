@@ -1,8 +1,12 @@
 import React from 'react';
 import styled  from 'styled-components';
 import LivePlay from './LivePlay';
+import WebcamCapture from './WebcamCapture';
+
+
 import "./styles/MainContext.css";
 import "../App.css"
+
 
 const MainContextBlock = styled.div`
 margin-top:15px;
@@ -27,8 +31,10 @@ function MainContext() {
         <div class="channel">
           <h4>&#91;CH1&#93;</h4>
         </div>
-
+{/*
         <LivePlay />
+*/}
+        <WebcamCapture />
     
     </>
     )  
